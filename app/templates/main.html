@@ -1,0 +1,25 @@
+<h1>Angular OMDb Movie Search</h1>
+<hr>
+<form name="movieForm"
+      ng-submit="searchCall()">
+  <input type="text"
+         ng-model="searchTerm"
+         autofocus>
+  <br>
+  <input type="submit">
+</form>
+
+
+<div id="gallery"
+     ng-hide="wait === true"
+     ng-repeat="movie in movies track by $index">
+    <div class="movieChunk">
+      <div class="left">
+        <a href="/#/movies/{{movie.imdbID}}"><h3>{{movie.Title}}</h3></a>
+        <p><em>({{movie.Year}})</em></p>
+      </div>
+      <div class="right">
+        <a href="/#/movies/{{movie.imdbID}}"><img src="{{movie.Poster}}" alt="movie poster" class="galleryImg"></a>
+      </div>
+    </div>
+</div>

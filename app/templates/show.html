@@ -1,0 +1,16 @@
+
+<div ng-controller="singleMovie">
+    <div ng-show="entertain == true">
+        <img src="http://downgraf.com/wp-content/uploads/2014/09/01-progress.gif" alt="loading gif">
+    </div>
+    <div ng-show="entertain == false">
+        <img src="{{movieInfo.Poster}}" alt="movie poster">
+        <h1>{{movieInfo.Title}}</h1>
+        <p><em>({{movieInfo.Year}})</em></p>
+        <p>{{movieInfo.Plot}}</p>
+        <h3>Actors: {{movieInfo.Actors}}</h3>
+        <h3>Director: {{movieInfo.Director}}</h3>
+        <h3>Writer(s): {{movieInfo.Writer}}</h3>
+    </div>
+    <a href="/#/"><h3>New Search</h3></a>
+</div>

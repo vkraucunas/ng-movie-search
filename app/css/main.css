@@ -1,0 +1,58 @@
+/* add custom styles */
+body {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    margin: 50px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+input[type=text] {
+    height: 80px;
+    width: 400px;
+    margin: 20px;
+    color: #2d2d2d;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button, input[type=submit] {
+    background-color: #b5d6b2
+    color: #2d2d2d;
+    height: 80px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.left {
+    width: 30%;
+    display: inline-block;
+}
+
+.right {
+    width: 40%;
+    display: inline-block;
+}
+
+.galleryImg {
+    height: 300px;
+    width: 200px;
+}
+
+.movieChunk {
+    border: white solid 2px;
+    border-radius: 20px;
+    margin: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #f5c631;
+}
